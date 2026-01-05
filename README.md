@@ -27,7 +27,7 @@ Ou via URL completa:
 Após adicionar o marketplace, instale o plugin:
 
 ```bash
-/plugin install gerar-quiz-rag@2a-marketplace
+/plugin install gerar-quiz-rag@plugin-rag-to-quiz
 ```
 
 ### Passo 3: Verificar Instalação
@@ -87,7 +87,7 @@ Após instalar, certifique-se de que o plugin está habilitado em `~/.claude/set
 ```json
 {
   "enabledPlugins": {
-    "gerar-quiz-rag@2a-marketplace": true
+    "gerar-quiz-rag@plugin-rag-to-quiz": true
   }
 }
 ```
@@ -185,7 +185,7 @@ MIT License - Sinta-se livre para usar e modificar.
 Para atualizar o marketplace e seus plugins:
 
 ```bash
-/plugin marketplace update 2a-marketplace
+/plugin marketplace update plugin-rag-to-quiz
 ```
 
 ## 🔗 Projetos Relacionados
