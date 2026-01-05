@@ -5,6 +5,31 @@ description: "Gerador e executor de quiz sobre conhecimento RAG. Comandos: '/ger
 
 # Quiz RAG - Skill do Claude Code
 
+## ⚠️ IMPORTANTE: Nome Completo Qualificado
+
+Ao invocar este skill via **Skill tool** (não via comando do usuário), você DEVE usar o **nome completo qualificado**:
+
+```
+✅ CORRETO: skill: "gerar-quiz-rag:gerar-quiz-rag"
+❌ ERRADO:  skill: "gerar-quiz-rag"
+```
+
+**Por quê?**
+- O nome curto `gerar-quiz-rag` pode causar erro: `Unknown skill: gerar-quiz-rag`
+- O sistema requer o formato completo: `<namespace>:<skill-name>`
+- Para este skill: `gerar-quiz-rag:gerar-quiz-rag`
+
+**Quando usar:**
+- Quando Claude invoca o skill programaticamente via Skill tool
+- Quando há necessidade de desambiguação entre skills com nomes similares
+
+**Comandos do usuário (continuam funcionando normalmente):**
+- `/gerar-quiz-rag gerar 30` ✅
+- `/gerar-quiz-rag iniciar` ✅
+- `/gerar-quiz-rag status` ✅
+
+---
+
 ## Visão Geral
 
 Esta skill permite ao Claude:
@@ -184,6 +209,8 @@ Resultado: `banco-perguntas.json` com todas as perguntas validadas e sem duplica
 ---
 
 ## Instruções para o Claude
+
+**⚠️ LEMBRETE:** Se você precisar invocar este skill via Skill tool, use o nome completo qualificado: `gerar-quiz-rag:gerar-quiz-rag` (não apenas `gerar-quiz-rag`).
 
 ### Quando `/gerar-quiz-rag gerar` for invocado:
 
