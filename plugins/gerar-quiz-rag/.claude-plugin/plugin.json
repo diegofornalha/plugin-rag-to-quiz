@@ -1,0 +1,9 @@
+{
+  "name": "gerar-quiz-rag",
+  "version": "1.0.0",
+  "description": "Transforma banco RAG SQLite em quizzes interativos de múltipla escolha",
+  "author": {
+    "name": "diegofornalha",
+    "email": "diegofornalha@gmail.com"
+  }
+}

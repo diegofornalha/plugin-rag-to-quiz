@@ -1,0 +1,16 @@
+{
+  "name": "2a-marketplace",
+  "owner": {
+    "name": "2a",
+    "email": ""
+  },
+  "description": "Marketplace RAG to Quiz - Transforme bancos RAG em quizzes interativos",
+  "plugins": [
+    {
+      "name": "gerar-quiz-rag",
+      "source": "./plugins/gerar-quiz-rag",
+      "description": "Transforma banco RAG SQLite em quizzes de múltipla escolha",
+      "version": "1.0.0"
+    }
+  ]
+}

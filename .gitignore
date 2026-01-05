@@ -1,0 +1,39 @@
+# Arquivos de dados gerados
+plugins/*/temp-lotes/*.json
+plugins/*/banco-perguntas.json
+
+# Bancos de dados privados
+plugins/*/fonte-da-verdade-rag/*.db
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+
+# Ambientes virtuais
+venv/
+env/
+ENV/
+
+# IDEs
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Sistema operacional
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+# Arquivos temporários
+*.tmp
+*.temp
+
+# Scripts auxiliares locais
+publish.sh
